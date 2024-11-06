@@ -59,7 +59,9 @@ while option_check:
     if choice.title().strip() == 'Quit':
         option_check = False
 
-    if choice.title().strip() != 'Add Task' and choice.title() != 'View Tasks' and choice.title() != 'Delete Task' and choice.title() != 'Quit':
+    if choice.title().strip() != 'Add Task' and choice.title(
+    ).strip() != 'View Tasks' and choice.title().strip() != 'Delete Task' and choice.title(
+    ).strip() != 'Quit':
         print("Please try again.")
         
         time.sleep(2)
